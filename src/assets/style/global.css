@@ -1,0 +1,314 @@
+/*
+    Bootstrapwatch CDN
+*/
+@import url('https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cosmo/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+/* defaults */
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+*{
+    padding:0 !important;
+    margin:0 !important;
+    font-family: "SUSE", sans-serif;
+}
+body{
+    background-color: rgb(240,240,240);
+}
+/*vue calendar*/
+.vuecal__flex.weekday-label{
+    width: 50px !important;
+    height: 50px !important;
+    color:#83a234ff;
+    margin-right: 0px !important;
+    margin-left:0px !important;
+}
+.vuecal:not(.vuecal--day-view) .vuecal__cell--selected {background-color: #000; color:#ffffff}
+.vuecal__cell--today, .vuecal__cell--current {background-color: #83a234ff !important; color:#ffffff}
+.vuecal__title{
+    background-color: #ffffff !important;
+}
+.vuecal__title button{
+    font-weight: bold;
+    color:#4a6307;
+}
+.vuecal__title-bar{
+    background-color: #ffffff;
+}
+.vuecal__cell{
+    border:0px !important;
+    height: 45px; 
+    width:50px !important;
+    border-radius: 50%;
+}
+/*cards*/
+.row.dashboard .col-7.row .card.col-3,
+.row.dashboard .col-11.card,
+.row.dashboard .col-4.card,
+.row.dashboard.categories .col-12.row .col-7.card,
+.row.dashboard.categories .col-12.row .col-4.card {
+    background-color: #ffffff;
+    border:0px !important;
+    border-radius: 0px !important;
+    padding:20px 10px !important;
+    box-shadow: 0px 0px 10px rgb(230,230,230);
+    margin-right: 20px !important;
+}
+/*button*/
+.btn{
+    padding:5px 10px !important;
+}
+
+.btn-primary{
+    background-color:#83a234ff;
+    border:0px !important;
+}
+/* override bootstrap */
+input:hover, a:hover, select:hover, button:hover {
+    color: inherit !important;
+    border-color: inherit !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+a:hover{
+    text-decoration: none !important;
+}
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: none !important;  /* Removes the outline (blue border) */
+  box-shadow: none !important;  /* Removes the shadow effect */
+ 
+ 
+}
+input,
+select{
+    padding: 5px 10px !important;
+    background-color: rgb(240,240,240) !important;
+    border:0px !important;
+}
+input:active,
+textarea:active,
+button:active,
+select:active {
+  outline: none !important;  /* Removes the outline (blue border) */
+  box-shadow: none !important;  /* Removes the shadow effect */
+  border-color: inherit !important;  /* Optional: Reset border color */
+ 
+}
+input:hover{
+    outline: none !important;
+}
+table thead tr th{
+    padding:6px 5px !important;
+    color:#83a234ff !important;
+}
+table tbody tr td{
+    padding:6px 5px !important;
+}
+.text-primary{
+    color: #83a234ff !important;
+}
+.btn-primary:hover{
+    background-color: #000 !important;
+    color:#83a234ff !important;
+}
+/* end of it */
+.center-page{
+    width:30%;
+    margin-left:35% !important;
+    padding-top: 30vh !important;
+    text-align: center;
+}
+.lg-page{
+    background:url(../images/lg-page.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 97vh;
+    width:100%;
+}
+.lg-page .fgt-text{
+    text-align: left;
+    margin-top: 10px !important;
+}
+.db-resp{
+    margin-top: 5vh !important;
+    width:30%;
+    left:68%;
+    right:1%;
+    padding:5px 10px !important;
+}
+.fa-close{
+    font-size: 22px;
+    cursor: pointer;
+}
+.response-message {
+    margin-top: 5vh !important;
+    width:30%;
+    left:68%;
+    right:1%;
+    padding:5px 10px !important;
+  }
+.footer{
+    width:100%;
+    text-align: center;
+    height: 3vh;
+}
+  /* home page */
+.nav-bar{
+    height: 100vh;
+    background-color: white;
+    box-shadow: 8px 0 5px 0 rgb(240,240,240);
+}
+.main-page{
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    width:98%;
+}
+.main-page .side-page{
+    margin-left:10px !important;
+}
+.nav-bar img{
+    width:50%;
+    height: auto;
+    margin-top: 20px !important;
+}
+.main-page.row .col-2{
+    margin: 0px !important;
+    padding:0px !important;
+
+}
+.nav-bar .col-12:last-child{
+    margin-top: 40px !important;
+}
+.nav-bar .col-12 li{
+    padding:3px 0px;
+    margin-left:10% !important;
+}
+.nav-bar .col-12 li ul li a{
+    width:100% !important;
+}
+.nav-bar .col-12 li a{
+    border-right: 3px solid transparent;
+    font-weight: 600;
+}
+.nav-bar .col-12 ul li a{
+    border-right: 0px !important;
+    font-size:14px;
+}
+.nav-bar .col-12 li a .col-2 {
+    width:100%;
+    font-size: 16px;
+}
+.nav-bar .col-12 li .col-10{
+    padding-left:0px !important;
+}
+.nav-bar .col-12 li a span{
+    margin-left: 0px !important;
+}
+.text-secondary{
+    color:rgba(17, 16, 16, 0.499) !important;
+}
+.nav-bar .col-12 li a:hover > .col-2,
+.nav-bar .active .col-2{
+    color:#83a234ff;
+}
+.nav-bar .col-12 li a:hover > .col-10,
+.nav-bar .active{
+    color:#000 !important;
+}
+.nav-bar .col-12 li a:hover,
+.nav-bar .active{
+    border-right: 3px solid #83a234ff !important;
+}
+.nav-bar .col-12 li ul li a:Hover{
+    border-right: 0px !important;
+    color: #83a234ff !important;
+}
+.nav-bar .col-12 li ul li a span{
+    margin-left: 5px !important;
+}
+.top-bar p{
+    margin-top:3vh !important;
+}
+.top-bar h3{
+    font-size: 25px;
+}
+.main-page.row{
+    margin:0px !important;
+}
+.top-bar .col-4{
+    margin-left: -10px !important;
+}
+.bar-panel .form-control{
+    border:1px solid transparent;
+    height: 35px;
+    border-radius: 17.5px;
+    background-color: rgb(245,245,245);
+    margin-left:10px !important;
+    width:84%;
+    padding: 0px 10px !important;
+}
+.bar-panel{
+    background-color: white;
+    padding:6px 0px !important;
+    border-radius: 25px;
+    margin-top: -18px !important;
+}
+.bar-panel .col-4 .fa-solid{
+    margin-top: 8px !important;
+    margin-right: 15px !important;
+    cursor: pointer;
+}
+.bar-panel .col-4 .fa-user{
+    margin-top: 0px !important;
+    font-size: 20px;
+    border-radius: 50%;
+    color:#83a234ff !important;
+    margin-right: 5px !important;
+    padding:8px !important;
+    background-color: rgb(240,240,240);
+}
+.bar-panel .col-4{
+    text-align: right;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row.dashboard .col-4.card{
+    width:fit-content !important;
+}
+.row.dashboard .col-7.row .card.col-3 h4{
+    font-size: 16px;
+}
+.row.dashboard{
+    margin-top: 30px !important;
+}
+.top-20{
+    margin-top:20px !important;
+}
+.nav-bar .col-12 li{
+    padding:5px 0px !important;
+}
+.row.dashboard.centered{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.row.dashboard.row.dashboard.categories .col-12 .col-4.card h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+.ttl{
+    font-size: 22px !important;
+    font-weight: 500;
+    margin-bottom: 20px !important;
+}
